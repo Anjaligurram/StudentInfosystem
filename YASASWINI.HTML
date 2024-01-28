@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<title>STUDENT REGISTRATION FORM</title>
+</head>
+<body bgcolor="black">
+<center>
+<h1 style=" font-style:italic;font-size:40px;background-color:yellow;"><u>STUDENT REGISTRATION FORM</u></h1>
+</center>
+<form action="insertdb.py" method="post">
+<table align="center" bgcolor="turquoise" cellpadding="10" border="10px">
+    <tr>
+        <td>
+        ROLLNO</td>
+        <td>
+        <input type="text" name="ROLLNO" maxlength="25"/>
+        </td>
+        </tr>
+<tr>
+<td>
+FIRSTNAME</td>
+<td>
+<input type="text" name="FIRSTNAME" maxlength="50"/>
+</td>
+</tr>
+<tr>
+<td>LASTNAME</td>
+<td><input type="text" name="LASTNAME"
+maxlength="50"/>
+</td>
+</tr>
+<tr>
+<td>DOB</td>
+<td><input type="date" name="DOB">
+</td>
+<tr>
+    <td>EMAILID</td>
+    <td><input type="text" name="EMAILID" maxlength="50"/></td>
+    </tr>
+    <tr>
+    <td>PASSWORD</td>
+    <td><input type="password" name="PASSWORD" maxlength="50"></td>
+    </tr>
+<tr>
+<td>
+MOBILENO</td>
+<td>
+<input type="text" name="MOBILENO" maxlength="10"/>
+</td></tr>
+<tr>
+<td>GENDER</td>
+<td>
+<select name="GENDER">
+    <option>female</option>
+    <option>male</option>
+    <option>other</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>ADDRESS</td><br>
+<td><textarea rows="4" cols="30" name="ADDRESS"></textarea>
+</td>
+</tr>
+<tr>
+    <td>COURSESAPPLIEDFOR</td>
+    <td>
+    <select name="COURSESAPPLIEDFOR">  
+        <optgroup label="INTER">
+        <option value="MPC" name="MPC">MPC</option>
+        <option value="BIPC" name="BIPC">BIPC</option></optgroup>
+    <optgroup label="B.TECH">
+        <option value="B.TECH CSE" name="B.TECH CSE">B.TECH CSE</option>
+        <option value="B.TECH ECE" name="B.TECH ECE">B.TECH ECE</option>
+        <option value="B.TECH EEE" name="B.TECH EEE">B.TECH EEE</option>
+        <option value="B.TECH MECH" name="B.TECH MECH">B.TECH MECH</option>
+        <option value="B.TECH CIVIL" name="B.TECH CIVIL">B.TECH CIVIL</option>
+        <option value="B.TECH AI" name="B.TECH AI">B.TECH AI</option>
+        <option value="B.TECH IT" name="B.TECH IT">B.TECH IT</option>
+        </optgroup>
+    <optgroup label="DEGREE">
+        <option value="Associate" name="ASSOCIATE">ASSOCIATE</option> 
+        <option value="BACHELOR'S" name="BACHELOR'S">BACHELOR'S</option> 
+        <option value="DOCTORATE" name="DOCTORATE">DOCTORATE</option>  
+        </optgroup>
+        <optgroup label="M.TECH">
+        <option value="CSE" name="CSE">CSE</option>  
+        <option value="ECE" name="ECE">ECE</option>  
+        <option value="EEE" name="EEE">EEE</option>  
+        </select> 
+        </td>
+    </tr>
+<tr>
+<td>SEAT</td>
+<td>
+    <select name="SEAT">
+        <option value="convenor" name="convenor">convenor</option>
+        <option value="management" name="management">management</option>
+        </select>
+</td>
+</tr>
+<br>
+<tr>
+<td>BLOODGROUP</td>
+<td>
+<select name="BLOODGROUP"> 
+    <option value="O+" name="O+">O+</option>  
+    <option value="o-" name="o-">o-</option>  
+    <option value="A+" name="A+" >A+</option>  
+    <option value="A-" name="A-">A-</option>  
+    <option value="B+" name="B+">B+</option>  
+    <option value="B-" name="B-">B-</option> 
+    <option value="AB+" name="AB+">AB+</option> 
+    <option value="AB-" name="AB-">AB-</option>
+    </select>  </td>
+</tr>
+<tr>
+<td>submit</td>
+<td><input type="submit" name="submit" value="submit"></td><br>
+<td><input type="reset" name="reset" value="reset"></td><br>
+</tr> 
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

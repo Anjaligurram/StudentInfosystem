@@ -1,0 +1,23 @@
+body{
+    min-height: 150vh;
+    display:flex;
+    align-items:top;
+    justify-content:center;
+    background-image: url(title.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#content
+{
+    display:grid;
+    align-items:top;
+    justify-content: center;
+    height: 10vh;
+    width: 30%;
+    background-color: rgba(0,0,0,0.8);
+    font-size:48px;
+    color: aliceblue;
+    text-transform:lowercase;
+
+}
